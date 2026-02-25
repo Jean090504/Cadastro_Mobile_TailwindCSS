@@ -4,30 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Cadastrar Nome</title>
+    <title>Criar Conta</title>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center bg-[#FF383C] antialiased">
+<body class="min-h-screen flex items-center justify-center bg-[#FF383C] antialiased font-sans">
 
-    <div class="flex flew-full max-w-md p-8 bg-[#FF383C] ">
-        <h1 class="text-5xl text-center text-white flex  mb-6 ">
+    <div class="w-full max-w-sm px-8 flex flex-col items-center">
+        
+        <h1 class="text-6xl text-white mb-10 font-light">
             Criar Conta
         </h1>
 
-    <div class="flex flex-row gap-4 justify-center mb-6">
-        <!-- Botão do Facebook -->
-        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="text-[#FF383C] text-x2 font-bold">f</span>
-        </div>
-        <!-- Botão do Google -->
-        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="text-[#FF383C] text-xl font-bold">G</span>
+        
+        <div class="flex flex-row gap-5 justify-center mb-6">
+            <!-- Botão do Facebook -->
+            <div class="group w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#FF383C] hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.4)] hover:border-white/30">
+                <span class="text-black text-2xl font-black transition-colors duration-300 group-hover:text-white">f</span>
+            </div>
+
+            <!-- Botão do Google -->
+            <div class="group w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#FF383C] hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.4)] hover:border-white/30">
+                <span class="text-black text-2xl font-black transition-colors duration-300 group-hover:text-white">G</span>
+            </div>
+            
+             <!-- Botão do LinkedIn -->
+            <div class="group w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-[#FF383C] hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.4)] hover:border-white/30">
+                <span class="text-black text-2xl font-black transition-colors duration-300 group-hover:text-white">in</span>
+            </div>
         </div>
 
-        <!-- Botão do LinkedIn -->
-        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="text-[#FF383C] text-xl font-bold">in</span>
-        </div>
-    </div>
+        <p class="text-white/90 text-sm mb-8">ou cadastre seu email</p>
+
+        <form class="w-full space-y-4">
+            <input type="text" placeholder="Nome" 
+                class="w-full bg-[#F3F3F3] px-4 py-3 focus:outline-none text-gray-700">
+            
+            <input type="email" placeholder="Email" 
+                class="w-full bg-[#F3F3F3] px-4 py-3 focus:outline-none text-gray-700">
+            
+            <input type="password" placeholder="Senha" 
+                class="w-full bg-[#F3F3F3] px-4 py-3 focus:outline-none text-gray-700">
+
+            <div class="pt-4">
+                <button type="submit" 
+                    class="w-full border-2 border-white rounded-full py-3 text-white font-bold text-lg uppercase tracking-wider hover:bg-white hover:text-[#FF383C] transition-all duration-300 cursor-pointer">
+                    Cadastrar
+                </button>
+            </div>
+        </form>
+
+        <p class="text-white mt-10 text-sm">
+            Já tem conta? <a href="#" class="font-bold hover:underline">Login</a>
+        </p>
     </div>
 
 </body>
